@@ -14,10 +14,7 @@ public class Rational {
 	    }
 
 	    Rational(long numerator, long denominator) throws Illegal {
-	    	if (denominator == 0)
-	    		throw new Illegal("Divide by zero.");
-	        this.numerator = numerator;
-	        this.denominator = denominator;
+	    	/* add your implementation here */
 	    } 
 
 	    // find the reduce form 
@@ -41,51 +38,26 @@ public class Rational {
 	    }
 
 	    public void subtract(Rational x) {
-	    	numerator = (numerator * x.denominator) - (x.numerator * denominator);
-	        denominator = (denominator * x.denominator); 
-	        simplestForm(); 
+	    	/* add your implementation here */
 	    }
 
 	    public void multiply(Rational x) { 
-	    	numerator = numerator * x.numerator;
-	        denominator = denominator * x.denominator; 
-	        simplestForm(); 
+	    	/* add your implementation here */
 	    }
 
 	    public void divide(Rational x) {
-	        numerator = numerator * x.denominator;
-	        denominator = denominator * x.numerator;
-	        simplestForm();
+	        /* add your implementation here */
 	    }
 
 	    public boolean equals(Object x) {
-	    	if (x == this) { 
-	    		return true; 
-	    	} 
-	    	
-	    	if (x == null || x.getClass() != this.getClass()) { 
-	    		return false; 
-	    	}
-
-	    	Rational r = (Rational) x;
-	    	r.simplestForm();
-	    	
-	    	return this.numerator == r.numerator && this.denominator == r.denominator;
+	    	/* add your implementation here */
 	    }
 
 	    public long compareTo(Object x) {
-	    	Rational r = (Rational) x;
-	    	
-	    	if (this.equals(r)) {
-	    		return 0;
-	    	} else if (numerator * r.denominator > r.numerator * denominator) {
-	    		return 1;
-	    	} else {
-	    		return -1;
-	    	}
+	    	/* add your implementation here */
 	    }
 
 	    public String toString() { 
-	        return this.numerator + "/" + this.denominator;
+	        /* add your implementation here */
 	    }
 	}
